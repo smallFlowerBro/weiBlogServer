@@ -1,0 +1,6 @@
+server:
+  port: 8080
+spring:
+  web:
+    resources:
+      static-locations: file:E:\WorkSpace\weiblog\view\dist

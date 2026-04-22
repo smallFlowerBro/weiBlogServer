@@ -31,3 +31,4 @@ build/
 
 ### VS Code ###
 .vscode/
+/weiblog-md-jwt/src/main/resources/application-dev.yml

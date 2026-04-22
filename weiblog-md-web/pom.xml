@@ -32,13 +32,22 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-webmvc</artifactId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-webmvc-test</artifactId>
-            <scope>test</scope>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope> <!-- 仅在测试阶段生效 -->
+        </dependency>
+        <dependency>
+            <groupId>com.weiyj</groupId>
+            <artifactId>weiblog-md-jwt</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.weiyj</groupId>
+            <artifactId>weiblog-md-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
 
