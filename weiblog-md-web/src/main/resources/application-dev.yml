@@ -3,4 +3,14 @@ server:
 spring:
   web:
     resources:
-      static-locations: file:E:\WorkSpace\weiblog\view\dist
+      static-locations: file:E:\WorkSpace\weiBlog\view\dist   #前端地址
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/weiblog?serverTimezone=GMT
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect   #指定sql方言
+    hibernate:
+      ddl-auto: update # 开发环境自动建表，生产环境请勿使用
+    show-sql: true # 显示sql语句
