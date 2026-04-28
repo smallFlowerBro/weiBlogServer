@@ -1,1 +1,12 @@
-spring.application.name=weiblog-md-jwt
+jwt:
+  # 请求头名称，前端传 token 的 key
+  header: Authorization
+  # Token 前缀，通常为 "Bearer " (注意有个空格)
+  prefix: Bearer
+  # 密钥 (生产环境建议使用长字符串或从环境变量读取，不要硬编码在代码里)
+  # 这里为了演示方便，使用了 Base64 编码的字符串，实际长度建议 256位以上
+  secret: c2VjcmV0LWtleS1mb3Itand0LXRva2VuLWdlbmVyYXRpb24=
+  # Token 过期时间 (单位：毫秒) - 7天
+  expiration: 604800000
+  # 是否开启刷新 Token 功能 (可选)
+  refresh-enable: true

@@ -1,1 +1,22 @@
+springdoc:
+  # 1. Swagger UI 相关配置
+  swagger-ui:
+    path: /swagger-ui.html      # 访问 Swagger 原生界面的路径
+    tags-sorter: alpha          # 标签排序方式：alpha(字母顺序)
+    operations-sorter: alpha    # 接口排序方式：alpha(字母顺序)
+  # 2. API 文档路径配置
+  api-docs:
+    path: /v3/api-docs          # 后端生成 JSON 文档的路径
+    enabled: true               # 是否开启文档服务
+  # 3. 分组配置 (重要：指定扫描哪个包)
+  group-configs:
+    - group: 'default'          # 分组名称
+      paths-to-match: '/**'     # 匹配所有路径
+      packages-to-scan: com.example.*.controller # 【修改这里】填你的 Controller 所在包路径
 
+# Knife4j 增强配置
+knife4j:
+  enable: true                  # 【必须】开启 Knife4j 增强功能，否则界面是原生的
+  setting:
+    language: zh_cn             # 界面语言：中文
+    swagger-model-name: 实体类列表 # 修改页面中“模型”的显示名称
