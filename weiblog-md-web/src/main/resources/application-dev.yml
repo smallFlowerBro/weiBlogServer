@@ -8,7 +8,7 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/weiblog?serverTimezone=GMT
     username: root
     password: 123456
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     database-platform: org.hibernate.dialect.MySQLDialect   #指定sql方言
     hibernate:
@@ -21,8 +21,41 @@ jwt:
   prefix: Bearer
   # 密钥 (生产环境建议使用长字符串或从环境变量读取，不要硬编码在代码里)
   # 这里为了演示方便，使用了 Base64 编码的字符串，实际长度建议 256位以上
-  secret: c2VjcmV0LWtleS1mb3Itand0LXRva2VuLWdlbmVyYXRpb24=
+  secret: aB1cD2eF3gH4iJ5kL6mN7oP8qR9sT0uV1wX2yZ3aB4cD5eF6gH7iJ8kL9mN0oP1qR2sT3uV4wX5yZ6aB7cD8eF9gH=
   # Token 过期时间 (单位：毫秒) - 7天
   expiration: 604800000
   # 是否开启刷新 Token 功能 (可选)
   refresh-enable: true
+springdoc:
+  # 1. Swagger UI 相关配置
+  swagger-ui:
+    path: /swagger-ui.html      # 访问 Swagger 原生界面的路径
+    tags-sorter: alpha          # 标签排序方式：alpha(字母顺序)
+    operations-sorter: alpha    # 接口排序方式：alpha(字母顺序)
+  # 2. API 文档路径配置
+  api-docs:
+    path: /v3/api-docs          # 后端生成 JSON 文档的路径
+    enabled: true               # 是否开启文档服务
+  # 3. 分组配置 (重要：指定扫描哪个包)
+  group-configs:
+    - group: 'admin'          # 分组名称
+      paths-to-match: '/**'     # 匹配所有路径
+      packages-to-scan: com.weiyj.admin.controller # 【修改这里】填你的 Controller 所在包路径
+
+# Knife4j 增强配置
+knife4j:
+  enable: true                  # 【必须】开启 Knife4j 增强功能，否则界面是原生的
+  production: false
+  setting:
+    language: zh_cn             # 界面语言：中文
+    swagger-model-name: 实体类列表 # 修改页面中“模型”的显示名称
+    footer-custom-content: WEIBLOG
+  info:
+    title: "Weilog 接口文档"
+    description: "基于 Knife4j 4.x 生成的接口文档"
+    version: "1.0.0"
+    contact:
+      name: "weiyj"
+      email: "120240508@qq.com"
+    license: "Apache 2.0"
+    license-url: "https://www.apache.org/licenses/LICENSE-2.0.html"

@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api/user")
-@Tag(name = "用户管理模块", description = "包含用户的增删改查接口") // 替代 @Api
+@Tag(name = "用户管理模块", description = "包含用户的增删改查接口")
 public class ApiUserController extends BaseController {
 
 

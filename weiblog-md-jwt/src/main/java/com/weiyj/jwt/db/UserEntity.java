@@ -7,18 +7,15 @@
  **/
 package com.weiyj.jwt.db;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.data.annotation.Id;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Entity
 @Table(name = "user")
 public class UserEntity {
     @Id
@@ -33,4 +30,10 @@ public class UserEntity {
 
     @Column(nullable = false)
     private String role; // e.g., ROLE_USER, ROLE_ADMIN
+
+    public UserEntity(String userName, String password, String role) {
+        this.userName = userName;
+        this.password = password;
+        this.role = role;
+    }
 }
