@@ -39,7 +39,7 @@ public class ApiAuthController extends BaseController {
 
 
     @Operation(summary = "用户登录",description = "根据用户传入的账户密码登录")
-    @GetMapping("/login")
+    @PostMapping("/login")
     public Map login(HttpServletRequest request,
                       HttpServletResponse response,
                       @RequestParam @NotNull(message = "用户名不得为空") String userName,
