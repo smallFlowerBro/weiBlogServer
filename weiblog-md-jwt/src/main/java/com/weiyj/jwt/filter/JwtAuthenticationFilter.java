@@ -21,10 +21,13 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
 import org.springframework.stereotype.Component;
+import org.springframework.util.AntPathMatcher;
 import org.springframework.util.StringUtils;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import java.io.IOException;
+import java.util.Arrays;
+import java.util.List;
 
 @Component
 @Log4j2
@@ -38,8 +41,20 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
     @Autowired
     private JwtConfig jwtProperties; // 读取 yml 配置（如 Header 名称）
+
+    public final List<String> EXCLUDE_PATH =  Arrays.asList("/api/auth/login");
+
+
+
+    
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
+
+        String path = request.getRequestURI();
+        if(EXCLUDE_PATH.stream().anyMatch(p->new AntPathMatcher().match(p,path))){
+            filterChain.doFilter(request,response);
+            return;
+        }
 
         try {
 

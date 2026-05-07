@@ -50,12 +50,3 @@ knife4j:
     language: zh_cn             # 界面语言：中文
     swagger-model-name: 实体类列表 # 修改页面中“模型”的显示名称
     footer-custom-content: WEIBLOG
-  info:
-    title: "Weilog 接口文档"
-    description: "基于 Knife4j 4.x 生成的接口文档"
-    version: "1.0.0"
-    contact:
-      name: "weiyj"
-      email: "120240508@qq.com"
-    license: "Apache 2.0"
-    license-url: "https://www.apache.org/licenses/LICENSE-2.0.html"

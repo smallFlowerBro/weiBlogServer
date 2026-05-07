@@ -40,7 +40,7 @@ public class MultiSecurityConfig  {
 
 
     @Bean
-    public AuthenticationManager authenticationManager(AuthenticationConfiguration authenticationConfiguration){
+    public AuthenticationManager authenticationManager(AuthenticationConfiguration authenticationConfiguration) throws Exception {
         return authenticationConfiguration.getAuthenticationManager();
     }
 
@@ -59,7 +59,7 @@ public class MultiSecurityConfig  {
 
     @Bean
     @Order(1)
-    public SecurityFilterChain securityFilterChain(HttpSecurity http){
+    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
             // 1. 开启跨域支持 (CORS)
             // 注意：需要在 WebMvcConfig 中也配置 CorsRegistry，或者在这里配置 corsConfigurationSource
