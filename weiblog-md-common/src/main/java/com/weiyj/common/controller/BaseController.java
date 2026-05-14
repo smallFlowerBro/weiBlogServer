@@ -7,5 +7,17 @@
  **/
 package com.weiyj.common.controller;
 
-public class BaseController {
+import com.weiyj.common.util.WebUtil;
+import jakarta.servlet.http.HttpServletRequest;
+
+import java.util.Map;
+
+public  abstract class BaseController {
+    public Map getParameterMap(HttpServletRequest request)  {
+        try{
+            return WebUtil.getRequestParam(request);
+        }catch (Exception e){
+            throw new RuntimeException("获取参数出现异常:"+e.getMessage());
+        }
+    }
 }

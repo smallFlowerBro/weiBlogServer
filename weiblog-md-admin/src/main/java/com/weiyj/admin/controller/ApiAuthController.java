@@ -47,6 +47,9 @@ public class ApiAuthController extends BaseController {
                       @RequestParam @NotNull(message = "用户名不得为空") String userName,
                       @RequestParam @NotNull(message = "密码不得为空")String password){
         try {
+
+            Map sendData = getParameterMap(request);
+
             Map data = new HashMap<>();
 
             String authToken = authService.auth(userName, password);
