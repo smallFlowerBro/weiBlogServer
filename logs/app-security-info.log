@@ -1,341 +1,271 @@
-2026-05-14 14:09:03.047 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 8.0.2.Final
-2026-05-14 14:09:03.092 [main] INFO  com.weiyj.web.WeiblogMdWebApplication - [logStarting,50] - Starting WeiblogMdWebApplication using Java 17.0.12 with PID 4232 (E:\WorkSpace\weiBlog\server\weiblog-md-web\target\classes started by Administrator in E:\WorkSpace\weiBlog\server)
-2026-05-14 14:09:03.094 [main] INFO  com.weiyj.web.WeiblogMdWebApplication - [logStartupProfileInfo,660] - The following 1 profile is active: "dev"
-2026-05-14 14:09:04.087 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - [registerRepositoriesIn,143] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-05-14 14:09:04.150 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - [registerRepositoriesIn,211] - Finished Spring Data repository scanning in 53 ms. Found 1 JPA repository interface.
-2026-05-14 14:09:04.843 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - [initialize,111] - Tomcat initialized with port 8080 (http)
-2026-05-14 14:09:04.859 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
-2026-05-14 14:09:04.860 [main] INFO  org.apache.catalina.core.StandardService - [log,173] - Starting service [Tomcat]
-2026-05-14 14:09:04.860 [main] INFO  org.apache.catalina.core.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/10.1.39]
-2026-05-14 14:09:04.954 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - [log,173] - Initializing Spring embedded WebApplicationContext
-2026-05-14 14:09:04.954 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,301] - Root WebApplicationContext: initialization completed in 1814 ms
-2026-05-14 14:09:05.092 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - [logPersistenceUnitInformation,31] - HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-05-14 14:09:05.167 [main] INFO  org.hibernate.Version - [logVersion,44] - HHH000412: Hibernate ORM core version 6.5.3.Final
-2026-05-14 14:09:05.215 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - [initiateService,50] - HHH000026: Second-level cache disabled
-2026-05-14 14:09:05.620 [main] INFO  o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - [addTransformer,87] - No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-05-14 14:09:05.665 [main] INFO  com.zaxxer.hikari.HikariDataSource - [getConnection,109] - HikariPool-1 - Starting...
-2026-05-14 14:09:05.859 [main] INFO  com.zaxxer.hikari.pool.HikariPool - [checkFailFast,554] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1e7d3d87
-2026-05-14 14:09:05.861 [main] INFO  com.zaxxer.hikari.HikariDataSource - [getConnection,122] - HikariPool-1 - Start completed.
-2026-05-14 14:09:06.833 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - [initiateService,59] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-05-14 14:09:06.956 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - [buildNativeEntityManagerFactory,437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-05-14 14:09:07.315 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - [configure,112] - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
-2026-05-14 14:09:07.474 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - [<init>,59] - Adding welcome page: URL [file:E:/WorkSpace/weiBlog/view/dist/index.html]
-2026-05-14 14:09:08.116 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
-2026-05-14 14:09:08.145 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - [start,243] - Tomcat started on port 8080 (http) with context path '/'
-2026-05-14 14:09:08.156 [main] INFO  com.weiyj.web.WeiblogMdWebApplication - [logStarted,56] - Started WeiblogMdWebApplication in 5.693 seconds (process running for 7.135)
-2026-05-14 14:09:56.277 [http-nio-8080-exec-3] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-05-14 14:09:56.277 [http-nio-8080-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet - [initServletBean,532] - Initializing Servlet 'dispatcherServlet'
-2026-05-14 14:09:56.278 [http-nio-8080-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet - [initServletBean,554] - Completed initialization in 1 ms
-2026-05-14 14:09:56.971 [http-nio-8080-exec-4] INFO  org.springdoc.api.AbstractOpenApiResource - [getOpenApi,390] - Init duration for springdoc-openapi is: 284 ms
-2026-05-14 14:36:12.571 [SpringApplicationShutdownHook] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - [destroy,650] - Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-05-14 14:36:12.573 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - [close,349] - HikariPool-1 - Shutdown initiated...
-2026-05-14 14:36:12.580 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - [close,351] - HikariPool-1 - Shutdown completed.
-2026-05-14 14:36:17.361 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 8.0.2.Final
-2026-05-14 14:36:17.398 [main] INFO  com.weiyj.web.WeiblogMdWebApplication - [logStarting,50] - Starting WeiblogMdWebApplication using Java 17.0.12 with PID 20668 (E:\WorkSpace\weiBlog\server\weiblog-md-web\target\classes started by Administrator in E:\WorkSpace\weiBlog\server)
-2026-05-14 14:36:17.399 [main] INFO  com.weiyj.web.WeiblogMdWebApplication - [logStartupProfileInfo,660] - The following 1 profile is active: "dev"
-2026-05-14 14:36:18.274 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - [registerRepositoriesIn,143] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-05-14 14:36:18.336 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - [registerRepositoriesIn,211] - Finished Spring Data repository scanning in 54 ms. Found 1 JPA repository interface.
-2026-05-14 14:36:19.116 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - [initialize,111] - Tomcat initialized with port 8080 (http)
-2026-05-14 14:36:19.147 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
-2026-05-14 14:36:19.151 [main] INFO  org.apache.catalina.core.StandardService - [log,173] - Starting service [Tomcat]
-2026-05-14 14:36:19.151 [main] INFO  org.apache.catalina.core.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/10.1.39]
-2026-05-14 14:36:19.263 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - [log,173] - Initializing Spring embedded WebApplicationContext
-2026-05-14 14:36:19.263 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,301] - Root WebApplicationContext: initialization completed in 1826 ms
-2026-05-14 14:36:19.410 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - [logPersistenceUnitInformation,31] - HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-05-14 14:36:19.502 [main] INFO  org.hibernate.Version - [logVersion,44] - HHH000412: Hibernate ORM core version 6.5.3.Final
-2026-05-14 14:36:19.555 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - [initiateService,50] - HHH000026: Second-level cache disabled
-2026-05-14 14:36:19.954 [main] INFO  o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - [addTransformer,87] - No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-05-14 14:36:19.996 [main] INFO  com.zaxxer.hikari.HikariDataSource - [getConnection,109] - HikariPool-1 - Starting...
-2026-05-14 14:36:20.152 [main] INFO  com.zaxxer.hikari.pool.HikariPool - [checkFailFast,554] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@115ef673
-2026-05-14 14:36:20.155 [main] INFO  com.zaxxer.hikari.HikariDataSource - [getConnection,122] - HikariPool-1 - Start completed.
-2026-05-14 14:36:21.245 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - [initiateService,59] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-05-14 14:36:21.324 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - [buildNativeEntityManagerFactory,437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-05-14 14:36:21.695 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - [configure,112] - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
-2026-05-14 14:36:21.875 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - [<init>,59] - Adding welcome page: URL [file:E:/WorkSpace/weiBlog/view/dist/index.html]
-2026-05-14 14:36:22.381 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
-2026-05-14 14:36:22.402 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - [start,243] - Tomcat started on port 8080 (http) with context path '/'
-2026-05-14 14:36:22.412 [main] INFO  com.weiyj.web.WeiblogMdWebApplication - [logStarted,56] - Started WeiblogMdWebApplication in 5.64 seconds (process running for 6.417)
-2026-05-14 14:37:11.605 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-05-14 14:37:11.605 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - [initServletBean,532] - Initializing Servlet 'dispatcherServlet'
-2026-05-14 14:37:11.606 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - [initServletBean,554] - Completed initialization in 1 ms
-2026-05-14 14:37:12.131 [http-nio-8080-exec-5] INFO  org.springdoc.api.AbstractOpenApiResource - [getOpenApi,390] - Init duration for springdoc-openapi is: 218 ms
-2026-05-14 14:38:38.282 [SpringApplicationShutdownHook] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - [destroy,650] - Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-05-14 14:38:38.284 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - [close,349] - HikariPool-1 - Shutdown initiated...
-2026-05-14 14:38:38.291 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - [close,351] - HikariPool-1 - Shutdown completed.
-2026-05-14 14:38:43.562 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 8.0.2.Final
-2026-05-14 14:38:43.613 [main] INFO  com.weiyj.web.WeiblogMdWebApplication - [logStarting,50] - Starting WeiblogMdWebApplication using Java 17.0.12 with PID 28448 (E:\WorkSpace\weiBlog\server\weiblog-md-web\target\classes started by Administrator in E:\WorkSpace\weiBlog\server)
-2026-05-14 14:38:43.614 [main] INFO  com.weiyj.web.WeiblogMdWebApplication - [logStartupProfileInfo,660] - The following 1 profile is active: "dev"
-2026-05-14 14:38:44.526 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - [registerRepositoriesIn,143] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-05-14 14:38:44.591 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - [registerRepositoriesIn,211] - Finished Spring Data repository scanning in 50 ms. Found 1 JPA repository interface.
-2026-05-14 14:38:45.140 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - [initialize,111] - Tomcat initialized with port 8080 (http)
-2026-05-14 14:38:45.153 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
-2026-05-14 14:38:45.154 [main] INFO  org.apache.catalina.core.StandardService - [log,173] - Starting service [Tomcat]
-2026-05-14 14:38:45.155 [main] INFO  org.apache.catalina.core.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/10.1.39]
-2026-05-14 14:38:45.233 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - [log,173] - Initializing Spring embedded WebApplicationContext
-2026-05-14 14:38:45.234 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,301] - Root WebApplicationContext: initialization completed in 1571 ms
-2026-05-14 14:38:45.358 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - [logPersistenceUnitInformation,31] - HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-05-14 14:38:45.423 [main] INFO  org.hibernate.Version - [logVersion,44] - HHH000412: Hibernate ORM core version 6.5.3.Final
-2026-05-14 14:38:45.460 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - [initiateService,50] - HHH000026: Second-level cache disabled
-2026-05-14 14:38:45.763 [main] INFO  o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - [addTransformer,87] - No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-05-14 14:38:45.798 [main] INFO  com.zaxxer.hikari.HikariDataSource - [getConnection,109] - HikariPool-1 - Starting...
-2026-05-14 14:38:45.947 [main] INFO  com.zaxxer.hikari.pool.HikariPool - [checkFailFast,554] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@26f480c6
-2026-05-14 14:38:45.950 [main] INFO  com.zaxxer.hikari.HikariDataSource - [getConnection,122] - HikariPool-1 - Start completed.
-2026-05-14 14:38:46.888 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - [initiateService,59] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-05-14 14:38:46.958 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - [buildNativeEntityManagerFactory,437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-05-14 14:38:47.308 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - [configure,112] - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
-2026-05-14 14:38:47.474 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - [<init>,59] - Adding welcome page: URL [file:E:/WorkSpace/weiBlog/view/dist/index.html]
-2026-05-14 14:38:47.955 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
-2026-05-14 14:38:47.975 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - [start,243] - Tomcat started on port 8080 (http) with context path '/'
-2026-05-14 14:38:47.986 [main] INFO  com.weiyj.web.WeiblogMdWebApplication - [logStarted,56] - Started WeiblogMdWebApplication in 5.023 seconds (process running for 5.736)
-2026-05-14 14:39:17.231 [http-nio-8080-exec-3] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-05-14 14:39:17.232 [http-nio-8080-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet - [initServletBean,532] - Initializing Servlet 'dispatcherServlet'
-2026-05-14 14:39:17.233 [http-nio-8080-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet - [initServletBean,554] - Completed initialization in 1 ms
-2026-05-14 14:43:19.704 [SpringApplicationShutdownHook] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - [destroy,650] - Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-05-14 14:43:19.705 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - [close,349] - HikariPool-1 - Shutdown initiated...
-2026-05-14 14:43:19.712 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - [close,351] - HikariPool-1 - Shutdown completed.
-2026-05-14 14:43:25.853 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 8.0.2.Final
-2026-05-14 14:43:25.895 [main] INFO  com.weiyj.web.WeiblogMdWebApplication - [logStarting,50] - Starting WeiblogMdWebApplication using Java 17.0.12 with PID 28328 (E:\WorkSpace\weiBlog\server\weiblog-md-web\target\classes started by Administrator in E:\WorkSpace\weiBlog\server)
-2026-05-14 14:43:25.896 [main] INFO  com.weiyj.web.WeiblogMdWebApplication - [logStartupProfileInfo,660] - The following 1 profile is active: "dev"
-2026-05-14 14:43:26.736 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - [registerRepositoriesIn,143] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-05-14 14:43:26.797 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - [registerRepositoriesIn,211] - Finished Spring Data repository scanning in 54 ms. Found 1 JPA repository interface.
-2026-05-14 14:43:27.347 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - [initialize,111] - Tomcat initialized with port 8080 (http)
-2026-05-14 14:43:27.359 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
-2026-05-14 14:43:27.361 [main] INFO  org.apache.catalina.core.StandardService - [log,173] - Starting service [Tomcat]
-2026-05-14 14:43:27.361 [main] INFO  org.apache.catalina.core.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/10.1.39]
-2026-05-14 14:43:27.437 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - [log,173] - Initializing Spring embedded WebApplicationContext
-2026-05-14 14:43:27.437 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,301] - Root WebApplicationContext: initialization completed in 1502 ms
-2026-05-14 14:43:27.553 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - [logPersistenceUnitInformation,31] - HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-05-14 14:43:27.609 [main] INFO  org.hibernate.Version - [logVersion,44] - HHH000412: Hibernate ORM core version 6.5.3.Final
-2026-05-14 14:43:27.644 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - [initiateService,50] - HHH000026: Second-level cache disabled
-2026-05-14 14:43:27.909 [main] INFO  o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - [addTransformer,87] - No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-05-14 14:43:27.941 [main] INFO  com.zaxxer.hikari.HikariDataSource - [getConnection,109] - HikariPool-1 - Starting...
-2026-05-14 14:43:28.073 [main] INFO  com.zaxxer.hikari.pool.HikariPool - [checkFailFast,554] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@476c137b
-2026-05-14 14:43:28.075 [main] INFO  com.zaxxer.hikari.HikariDataSource - [getConnection,122] - HikariPool-1 - Start completed.
-2026-05-14 14:43:28.899 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - [initiateService,59] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-05-14 14:43:28.979 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - [buildNativeEntityManagerFactory,437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-05-14 14:43:29.325 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - [configure,112] - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
-2026-05-14 14:43:29.473 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - [<init>,59] - Adding welcome page: URL [file:E:/WorkSpace/weiBlog/view/dist/index.html]
-2026-05-14 14:43:29.901 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
-2026-05-14 14:43:29.919 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - [start,243] - Tomcat started on port 8080 (http) with context path '/'
-2026-05-14 14:43:29.931 [main] INFO  com.weiyj.web.WeiblogMdWebApplication - [logStarted,56] - Started WeiblogMdWebApplication in 4.629 seconds (process running for 5.442)
-2026-05-14 14:44:05.921 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-05-14 14:44:05.922 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - [initServletBean,532] - Initializing Servlet 'dispatcherServlet'
-2026-05-14 14:44:05.923 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - [initServletBean,554] - Completed initialization in 1 ms
-2026-05-14 14:45:12.637 [SpringApplicationShutdownHook] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - [destroy,650] - Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-05-14 14:45:12.639 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - [close,349] - HikariPool-1 - Shutdown initiated...
-2026-05-14 14:45:12.644 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - [close,351] - HikariPool-1 - Shutdown completed.
-2026-05-14 14:45:17.520 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 8.0.2.Final
-2026-05-14 14:45:17.558 [main] INFO  com.weiyj.web.WeiblogMdWebApplication - [logStarting,50] - Starting WeiblogMdWebApplication using Java 17.0.12 with PID 21188 (E:\WorkSpace\weiBlog\server\weiblog-md-web\target\classes started by Administrator in E:\WorkSpace\weiBlog\server)
-2026-05-14 14:45:17.559 [main] INFO  com.weiyj.web.WeiblogMdWebApplication - [logStartupProfileInfo,660] - The following 1 profile is active: "dev"
-2026-05-14 14:45:18.383 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - [registerRepositoriesIn,143] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-05-14 14:45:18.442 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - [registerRepositoriesIn,211] - Finished Spring Data repository scanning in 53 ms. Found 1 JPA repository interface.
-2026-05-14 14:45:18.992 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - [initialize,111] - Tomcat initialized with port 8080 (http)
-2026-05-14 14:45:19.004 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
-2026-05-14 14:45:19.006 [main] INFO  org.apache.catalina.core.StandardService - [log,173] - Starting service [Tomcat]
-2026-05-14 14:45:19.006 [main] INFO  org.apache.catalina.core.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/10.1.39]
-2026-05-14 14:45:19.081 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - [log,173] - Initializing Spring embedded WebApplicationContext
-2026-05-14 14:45:19.082 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,301] - Root WebApplicationContext: initialization completed in 1484 ms
-2026-05-14 14:45:19.192 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - [logPersistenceUnitInformation,31] - HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-05-14 14:45:19.258 [main] INFO  org.hibernate.Version - [logVersion,44] - HHH000412: Hibernate ORM core version 6.5.3.Final
-2026-05-14 14:45:19.294 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - [initiateService,50] - HHH000026: Second-level cache disabled
-2026-05-14 14:45:19.561 [main] INFO  o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - [addTransformer,87] - No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-05-14 14:45:19.593 [main] INFO  com.zaxxer.hikari.HikariDataSource - [getConnection,109] - HikariPool-1 - Starting...
-2026-05-14 14:45:19.721 [main] INFO  com.zaxxer.hikari.pool.HikariPool - [checkFailFast,554] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@26f480c6
-2026-05-14 14:45:19.723 [main] INFO  com.zaxxer.hikari.HikariDataSource - [getConnection,122] - HikariPool-1 - Start completed.
-2026-05-14 14:45:20.591 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - [initiateService,59] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-05-14 14:45:20.654 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - [buildNativeEntityManagerFactory,437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-05-14 14:45:20.965 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - [configure,112] - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
-2026-05-14 14:45:21.112 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - [<init>,59] - Adding welcome page: URL [file:E:/WorkSpace/weiBlog/view/dist/index.html]
-2026-05-14 14:45:21.542 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
-2026-05-14 14:45:21.559 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - [start,243] - Tomcat started on port 8080 (http) with context path '/'
-2026-05-14 14:45:21.567 [main] INFO  com.weiyj.web.WeiblogMdWebApplication - [logStarted,56] - Started WeiblogMdWebApplication in 4.614 seconds (process running for 5.347)
-2026-05-14 14:46:05.135 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-05-14 14:46:05.136 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - [initServletBean,532] - Initializing Servlet 'dispatcherServlet'
-2026-05-14 14:46:05.137 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - [initServletBean,554] - Completed initialization in 1 ms
-2026-05-14 14:46:50.658 [SpringApplicationShutdownHook] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - [destroy,650] - Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-05-14 14:46:50.660 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - [close,349] - HikariPool-1 - Shutdown initiated...
-2026-05-14 14:46:50.666 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - [close,351] - HikariPool-1 - Shutdown completed.
-2026-05-14 14:46:55.992 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 8.0.2.Final
-2026-05-14 14:46:56.033 [main] INFO  com.weiyj.web.WeiblogMdWebApplication - [logStarting,50] - Starting WeiblogMdWebApplication using Java 17.0.12 with PID 21492 (E:\WorkSpace\weiBlog\server\weiblog-md-web\target\classes started by Administrator in E:\WorkSpace\weiBlog\server)
-2026-05-14 14:46:56.034 [main] INFO  com.weiyj.web.WeiblogMdWebApplication - [logStartupProfileInfo,660] - The following 1 profile is active: "dev"
-2026-05-14 14:46:56.845 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - [registerRepositoriesIn,143] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-05-14 14:46:56.905 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - [registerRepositoriesIn,211] - Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interface.
-2026-05-14 14:46:57.456 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - [initialize,111] - Tomcat initialized with port 8080 (http)
-2026-05-14 14:46:57.468 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
-2026-05-14 14:46:57.470 [main] INFO  org.apache.catalina.core.StandardService - [log,173] - Starting service [Tomcat]
-2026-05-14 14:46:57.470 [main] INFO  org.apache.catalina.core.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/10.1.39]
-2026-05-14 14:46:57.549 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - [log,173] - Initializing Spring embedded WebApplicationContext
-2026-05-14 14:46:57.549 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,301] - Root WebApplicationContext: initialization completed in 1477 ms
-2026-05-14 14:46:57.664 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - [logPersistenceUnitInformation,31] - HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-05-14 14:46:57.721 [main] INFO  org.hibernate.Version - [logVersion,44] - HHH000412: Hibernate ORM core version 6.5.3.Final
-2026-05-14 14:46:57.756 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - [initiateService,50] - HHH000026: Second-level cache disabled
-2026-05-14 14:46:58.020 [main] INFO  o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - [addTransformer,87] - No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-05-14 14:46:58.053 [main] INFO  com.zaxxer.hikari.HikariDataSource - [getConnection,109] - HikariPool-1 - Starting...
-2026-05-14 14:46:58.182 [main] INFO  com.zaxxer.hikari.pool.HikariPool - [checkFailFast,554] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@26f480c6
-2026-05-14 14:46:58.184 [main] INFO  com.zaxxer.hikari.HikariDataSource - [getConnection,122] - HikariPool-1 - Start completed.
-2026-05-14 14:46:59.047 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - [initiateService,59] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-05-14 14:46:59.103 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - [buildNativeEntityManagerFactory,437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-05-14 14:46:59.434 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - [configure,112] - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
-2026-05-14 14:46:59.582 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - [<init>,59] - Adding welcome page: URL [file:E:/WorkSpace/weiBlog/view/dist/index.html]
-2026-05-14 14:47:00.013 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
-2026-05-14 14:47:00.034 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - [start,243] - Tomcat started on port 8080 (http) with context path '/'
-2026-05-14 14:47:00.043 [main] INFO  com.weiyj.web.WeiblogMdWebApplication - [logStarted,56] - Started WeiblogMdWebApplication in 4.608 seconds (process running for 5.282)
-2026-05-14 14:47:16.467 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-05-14 14:47:16.468 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - [initServletBean,532] - Initializing Servlet 'dispatcherServlet'
-2026-05-14 14:47:16.469 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - [initServletBean,554] - Completed initialization in 1 ms
-2026-05-14 14:47:52.639 [SpringApplicationShutdownHook] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - [destroy,650] - Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-05-14 14:47:52.640 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - [close,349] - HikariPool-1 - Shutdown initiated...
-2026-05-14 14:47:52.646 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - [close,351] - HikariPool-1 - Shutdown completed.
-2026-05-14 14:47:57.684 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 8.0.2.Final
-2026-05-14 14:47:57.722 [main] INFO  com.weiyj.web.WeiblogMdWebApplication - [logStarting,50] - Starting WeiblogMdWebApplication using Java 17.0.12 with PID 27356 (E:\WorkSpace\weiBlog\server\weiblog-md-web\target\classes started by Administrator in E:\WorkSpace\weiBlog\server)
-2026-05-14 14:47:57.723 [main] INFO  com.weiyj.web.WeiblogMdWebApplication - [logStartupProfileInfo,660] - The following 1 profile is active: "dev"
-2026-05-14 14:47:58.579 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - [registerRepositoriesIn,143] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-05-14 14:47:58.641 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - [registerRepositoriesIn,211] - Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interface.
-2026-05-14 14:47:59.187 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - [initialize,111] - Tomcat initialized with port 8080 (http)
-2026-05-14 14:47:59.200 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
-2026-05-14 14:47:59.201 [main] INFO  org.apache.catalina.core.StandardService - [log,173] - Starting service [Tomcat]
-2026-05-14 14:47:59.202 [main] INFO  org.apache.catalina.core.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/10.1.39]
-2026-05-14 14:47:59.273 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - [log,173] - Initializing Spring embedded WebApplicationContext
-2026-05-14 14:47:59.273 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,301] - Root WebApplicationContext: initialization completed in 1512 ms
-2026-05-14 14:47:59.385 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - [logPersistenceUnitInformation,31] - HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-05-14 14:47:59.447 [main] INFO  org.hibernate.Version - [logVersion,44] - HHH000412: Hibernate ORM core version 6.5.3.Final
-2026-05-14 14:47:59.481 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - [initiateService,50] - HHH000026: Second-level cache disabled
-2026-05-14 14:47:59.749 [main] INFO  o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - [addTransformer,87] - No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-05-14 14:47:59.780 [main] INFO  com.zaxxer.hikari.HikariDataSource - [getConnection,109] - HikariPool-1 - Starting...
-2026-05-14 14:47:59.909 [main] INFO  com.zaxxer.hikari.pool.HikariPool - [checkFailFast,554] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@74619273
-2026-05-14 14:47:59.911 [main] INFO  com.zaxxer.hikari.HikariDataSource - [getConnection,122] - HikariPool-1 - Start completed.
-2026-05-14 14:48:00.740 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - [initiateService,59] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-05-14 14:48:00.797 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - [buildNativeEntityManagerFactory,437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-05-14 14:48:01.108 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - [configure,112] - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
-2026-05-14 14:48:01.253 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - [<init>,59] - Adding welcome page: URL [file:E:/WorkSpace/weiBlog/view/dist/index.html]
-2026-05-14 14:48:01.706 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
-2026-05-14 14:48:01.724 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - [start,243] - Tomcat started on port 8080 (http) with context path '/'
-2026-05-14 14:48:01.733 [main] INFO  com.weiyj.web.WeiblogMdWebApplication - [logStarted,56] - Started WeiblogMdWebApplication in 4.607 seconds (process running for 5.3)
-2026-05-14 14:48:16.570 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-05-14 14:48:16.570 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - [initServletBean,532] - Initializing Servlet 'dispatcherServlet'
-2026-05-14 14:48:16.571 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - [initServletBean,554] - Completed initialization in 0 ms
-2026-05-14 14:51:21.971 [SpringApplicationShutdownHook] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - [destroy,650] - Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-05-14 14:51:21.973 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - [close,349] - HikariPool-1 - Shutdown initiated...
-2026-05-14 14:51:21.980 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - [close,351] - HikariPool-1 - Shutdown completed.
-2026-05-14 14:51:38.620 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 8.0.2.Final
-2026-05-14 14:51:38.666 [main] INFO  com.weiyj.web.WeiblogMdWebApplication - [logStarting,50] - Starting WeiblogMdWebApplication using Java 17.0.12 with PID 28256 (E:\WorkSpace\weiBlog\server\weiblog-md-web\target\classes started by Administrator in E:\WorkSpace\weiBlog\server)
-2026-05-14 14:51:38.667 [main] INFO  com.weiyj.web.WeiblogMdWebApplication - [logStartupProfileInfo,660] - The following 1 profile is active: "dev"
-2026-05-14 14:51:39.556 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - [registerRepositoriesIn,143] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-05-14 14:51:39.615 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - [registerRepositoriesIn,211] - Finished Spring Data repository scanning in 47 ms. Found 1 JPA repository interface.
-2026-05-14 14:51:40.165 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - [initialize,111] - Tomcat initialized with port 8080 (http)
-2026-05-14 14:51:40.178 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
-2026-05-14 14:51:40.180 [main] INFO  org.apache.catalina.core.StandardService - [log,173] - Starting service [Tomcat]
-2026-05-14 14:51:40.180 [main] INFO  org.apache.catalina.core.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/10.1.39]
-2026-05-14 14:51:40.256 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - [log,173] - Initializing Spring embedded WebApplicationContext
-2026-05-14 14:51:40.257 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,301] - Root WebApplicationContext: initialization completed in 1540 ms
-2026-05-14 14:51:40.394 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - [logPersistenceUnitInformation,31] - HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-05-14 14:51:40.473 [main] INFO  org.hibernate.Version - [logVersion,44] - HHH000412: Hibernate ORM core version 6.5.3.Final
-2026-05-14 14:51:40.519 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - [initiateService,50] - HHH000026: Second-level cache disabled
-2026-05-14 14:51:40.877 [main] INFO  o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - [addTransformer,87] - No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-05-14 14:51:40.912 [main] INFO  com.zaxxer.hikari.HikariDataSource - [getConnection,109] - HikariPool-1 - Starting...
-2026-05-14 14:51:41.063 [main] INFO  com.zaxxer.hikari.pool.HikariPool - [checkFailFast,554] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@417446d9
-2026-05-14 14:51:41.065 [main] INFO  com.zaxxer.hikari.HikariDataSource - [getConnection,122] - HikariPool-1 - Start completed.
-2026-05-14 14:51:42.023 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - [initiateService,59] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-05-14 14:51:42.095 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - [buildNativeEntityManagerFactory,437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-05-14 14:51:42.452 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - [configure,112] - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
-2026-05-14 14:51:42.623 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - [<init>,59] - Adding welcome page: URL [file:E:/WorkSpace/weiBlog/view/dist/index.html]
-2026-05-14 14:51:43.125 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
-2026-05-14 14:51:43.147 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - [start,243] - Tomcat started on port 8080 (http) with context path '/'
-2026-05-14 14:51:43.156 [main] INFO  com.weiyj.web.WeiblogMdWebApplication - [logStarted,56] - Started WeiblogMdWebApplication in 5.142 seconds (process running for 5.891)
-2026-05-14 14:53:28.075 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-05-14 14:53:28.076 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - [initServletBean,532] - Initializing Servlet 'dispatcherServlet'
-2026-05-14 14:53:28.076 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - [initServletBean,554] - Completed initialization in 0 ms
-2026-05-14 16:45:30.385 [SpringApplicationShutdownHook] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - [destroy,650] - Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-05-14 16:45:30.397 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - [close,349] - HikariPool-1 - Shutdown initiated...
-2026-05-14 16:45:30.401 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - [close,351] - HikariPool-1 - Shutdown completed.
-2026-05-14 16:45:37.920 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 8.0.2.Final
-2026-05-14 16:45:37.957 [main] INFO  com.weiyj.web.WeiblogMdWebApplication - [logStarting,50] - Starting WeiblogMdWebApplication using Java 17.0.12 with PID 27404 (E:\WorkSpace\weiBlog\server\weiblog-md-web\target\classes started by Administrator in E:\WorkSpace\weiBlog\server)
-2026-05-14 16:45:37.958 [main] INFO  com.weiyj.web.WeiblogMdWebApplication - [logStartupProfileInfo,660] - The following 1 profile is active: "dev"
-2026-05-14 16:45:38.793 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - [registerRepositoriesIn,143] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-05-14 16:45:38.850 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - [registerRepositoriesIn,211] - Finished Spring Data repository scanning in 50 ms. Found 1 JPA repository interface.
-2026-05-14 16:45:39.437 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - [initialize,111] - Tomcat initialized with port 8080 (http)
-2026-05-14 16:45:39.452 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
-2026-05-14 16:45:39.453 [main] INFO  org.apache.catalina.core.StandardService - [log,173] - Starting service [Tomcat]
-2026-05-14 16:45:39.454 [main] INFO  org.apache.catalina.core.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/10.1.39]
-2026-05-14 16:45:39.536 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - [log,173] - Initializing Spring embedded WebApplicationContext
-2026-05-14 16:45:39.537 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,301] - Root WebApplicationContext: initialization completed in 1540 ms
-2026-05-14 16:45:39.661 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - [logPersistenceUnitInformation,31] - HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-05-14 16:45:39.736 [main] INFO  org.hibernate.Version - [logVersion,44] - HHH000412: Hibernate ORM core version 6.5.3.Final
-2026-05-14 16:45:39.781 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - [initiateService,50] - HHH000026: Second-level cache disabled
-2026-05-14 16:45:40.083 [main] INFO  o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - [addTransformer,87] - No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-05-14 16:45:40.119 [main] INFO  com.zaxxer.hikari.HikariDataSource - [getConnection,109] - HikariPool-1 - Starting...
-2026-05-14 16:45:40.256 [main] INFO  com.zaxxer.hikari.pool.HikariPool - [checkFailFast,554] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@8ce3f27
-2026-05-14 16:45:40.258 [main] INFO  com.zaxxer.hikari.HikariDataSource - [getConnection,122] - HikariPool-1 - Start completed.
-2026-05-14 16:45:41.219 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - [initiateService,59] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-05-14 16:45:41.284 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - [buildNativeEntityManagerFactory,437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-05-14 16:45:41.602 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - [configure,112] - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
-2026-05-14 16:45:41.752 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - [<init>,59] - Adding welcome page: URL [file:E:/WorkSpace/weiBlog/view/dist/index.html]
-2026-05-14 16:45:42.188 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
-2026-05-14 16:45:42.206 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - [start,243] - Tomcat started on port 8080 (http) with context path '/'
-2026-05-14 16:45:42.216 [main] INFO  com.weiyj.web.WeiblogMdWebApplication - [logStarted,56] - Started WeiblogMdWebApplication in 4.918 seconds (process running for 5.682)
-2026-05-14 16:46:18.785 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-05-14 16:46:18.785 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - [initServletBean,532] - Initializing Servlet 'dispatcherServlet'
-2026-05-14 16:46:18.787 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - [initServletBean,554] - Completed initialization in 1 ms
-2026-05-14 16:46:19.449 [http-nio-8080-exec-7] INFO  org.springdoc.api.AbstractOpenApiResource - [getOpenApi,390] - Init duration for springdoc-openapi is: 217 ms
-2026-05-14 16:54:50.090 [SpringApplicationShutdownHook] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - [destroy,650] - Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-05-14 16:54:50.092 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - [close,349] - HikariPool-1 - Shutdown initiated...
-2026-05-14 16:54:50.099 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - [close,351] - HikariPool-1 - Shutdown completed.
-2026-05-14 16:54:55.417 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 8.0.2.Final
-2026-05-14 16:54:55.459 [main] INFO  com.weiyj.web.WeiblogMdWebApplication - [logStarting,50] - Starting WeiblogMdWebApplication using Java 17.0.12 with PID 18656 (E:\WorkSpace\weiBlog\server\weiblog-md-web\target\classes started by Administrator in E:\WorkSpace\weiBlog\server)
-2026-05-14 16:54:55.460 [main] INFO  com.weiyj.web.WeiblogMdWebApplication - [logStartupProfileInfo,660] - The following 1 profile is active: "dev"
-2026-05-14 16:54:56.267 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - [registerRepositoriesIn,143] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-05-14 16:54:56.329 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - [registerRepositoriesIn,211] - Finished Spring Data repository scanning in 49 ms. Found 1 JPA repository interface.
-2026-05-14 16:54:56.879 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - [initialize,111] - Tomcat initialized with port 8080 (http)
-2026-05-14 16:54:56.891 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
-2026-05-14 16:54:56.893 [main] INFO  org.apache.catalina.core.StandardService - [log,173] - Starting service [Tomcat]
-2026-05-14 16:54:56.893 [main] INFO  org.apache.catalina.core.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/10.1.39]
-2026-05-14 16:54:56.965 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - [log,173] - Initializing Spring embedded WebApplicationContext
-2026-05-14 16:54:56.965 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,301] - Root WebApplicationContext: initialization completed in 1467 ms
-2026-05-14 16:54:57.081 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - [logPersistenceUnitInformation,31] - HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-05-14 16:54:57.140 [main] INFO  org.hibernate.Version - [logVersion,44] - HHH000412: Hibernate ORM core version 6.5.3.Final
-2026-05-14 16:54:57.175 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - [initiateService,50] - HHH000026: Second-level cache disabled
-2026-05-14 16:54:57.442 [main] INFO  o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - [addTransformer,87] - No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-05-14 16:54:57.473 [main] INFO  com.zaxxer.hikari.HikariDataSource - [getConnection,109] - HikariPool-1 - Starting...
-2026-05-14 16:54:57.608 [main] INFO  com.zaxxer.hikari.pool.HikariPool - [checkFailFast,554] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6802d023
-2026-05-14 16:54:57.610 [main] INFO  com.zaxxer.hikari.HikariDataSource - [getConnection,122] - HikariPool-1 - Start completed.
-2026-05-14 16:54:58.499 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - [initiateService,59] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-05-14 16:54:58.542 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - [buildNativeEntityManagerFactory,437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-05-14 16:54:58.863 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - [configure,112] - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
-2026-05-14 16:54:59.010 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - [<init>,59] - Adding welcome page: URL [file:E:/WorkSpace/weiBlog/view/dist/index.html]
-2026-05-14 16:54:59.440 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
-2026-05-14 16:54:59.458 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - [start,243] - Tomcat started on port 8080 (http) with context path '/'
-2026-05-14 16:54:59.467 [main] INFO  com.weiyj.web.WeiblogMdWebApplication - [logStarted,56] - Started WeiblogMdWebApplication in 4.696 seconds (process running for 5.394)
-2026-05-14 16:55:19.858 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-05-14 16:55:19.858 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - [initServletBean,532] - Initializing Servlet 'dispatcherServlet'
-2026-05-14 16:55:19.859 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - [initServletBean,554] - Completed initialization in 1 ms
-2026-05-14 17:01:50.498 [SpringApplicationShutdownHook] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - [destroy,650] - Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-05-14 17:01:50.499 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - [close,349] - HikariPool-1 - Shutdown initiated...
-2026-05-14 17:01:50.506 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - [close,351] - HikariPool-1 - Shutdown completed.
-2026-05-14 17:01:56.268 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 8.0.2.Final
-2026-05-14 17:01:56.306 [main] INFO  com.weiyj.web.WeiblogMdWebApplication - [logStarting,50] - Starting WeiblogMdWebApplication using Java 17.0.12 with PID 25452 (E:\WorkSpace\weiBlog\server\weiblog-md-web\target\classes started by Administrator in E:\WorkSpace\weiBlog\server)
-2026-05-14 17:01:56.307 [main] INFO  com.weiyj.web.WeiblogMdWebApplication - [logStartupProfileInfo,660] - The following 1 profile is active: "dev"
-2026-05-14 17:01:57.142 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - [registerRepositoriesIn,143] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-05-14 17:01:57.200 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - [registerRepositoriesIn,211] - Finished Spring Data repository scanning in 50 ms. Found 1 JPA repository interface.
-2026-05-14 17:01:57.762 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - [initialize,111] - Tomcat initialized with port 8080 (http)
-2026-05-14 17:01:57.775 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
-2026-05-14 17:01:57.777 [main] INFO  org.apache.catalina.core.StandardService - [log,173] - Starting service [Tomcat]
-2026-05-14 17:01:57.777 [main] INFO  org.apache.catalina.core.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/10.1.39]
-2026-05-14 17:01:57.854 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - [log,173] - Initializing Spring embedded WebApplicationContext
-2026-05-14 17:01:57.854 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,301] - Root WebApplicationContext: initialization completed in 1509 ms
-2026-05-14 17:01:57.972 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - [logPersistenceUnitInformation,31] - HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-05-14 17:01:58.033 [main] INFO  org.hibernate.Version - [logVersion,44] - HHH000412: Hibernate ORM core version 6.5.3.Final
-2026-05-14 17:01:58.069 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - [initiateService,50] - HHH000026: Second-level cache disabled
-2026-05-14 17:01:58.332 [main] INFO  o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - [addTransformer,87] - No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-05-14 17:01:58.373 [main] INFO  com.zaxxer.hikari.HikariDataSource - [getConnection,109] - HikariPool-1 - Starting...
-2026-05-14 17:01:58.511 [main] INFO  com.zaxxer.hikari.pool.HikariPool - [checkFailFast,554] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1d7f7962
-2026-05-14 17:01:58.513 [main] INFO  com.zaxxer.hikari.HikariDataSource - [getConnection,122] - HikariPool-1 - Start completed.
-2026-05-14 17:01:59.371 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - [initiateService,59] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-05-14 17:01:59.432 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - [buildNativeEntityManagerFactory,437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-05-14 17:01:59.749 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - [configure,112] - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
-2026-05-14 17:01:59.907 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - [<init>,59] - Adding welcome page: URL [file:E:/WorkSpace/weiBlog/view/dist/index.html]
-2026-05-14 17:02:00.429 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
-2026-05-14 17:02:00.447 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - [start,243] - Tomcat started on port 8080 (http) with context path '/'
-2026-05-14 17:02:00.457 [main] INFO  com.weiyj.web.WeiblogMdWebApplication - [logStarted,56] - Started WeiblogMdWebApplication in 4.772 seconds (process running for 5.466)
-2026-05-14 17:02:09.630 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-05-14 17:02:09.631 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - [initServletBean,532] - Initializing Servlet 'dispatcherServlet'
-2026-05-14 17:02:09.632 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - [initServletBean,554] - Completed initialization in 1 ms
+2026-05-15 16:43:06.161 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 8.0.2.Final
+2026-05-15 16:43:06.212 [main] INFO  com.weiyj.web.WeiblogMdWebApplication - [logStarting,50] - Starting WeiblogMdWebApplication using Java 17.0.12 with PID 25668 (E:\WorkSpace\weiBlog\server\weiblog-md-web\target\classes started by Administrator in E:\WorkSpace\weiBlog\server)
+2026-05-15 16:43:06.213 [main] INFO  com.weiyj.web.WeiblogMdWebApplication - [logStartupProfileInfo,660] - The following 1 profile is active: "dev"
+2026-05-15 16:43:07.276 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - [registerRepositoriesIn,143] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-15 16:43:07.349 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - [registerRepositoriesIn,211] - Finished Spring Data repository scanning in 62 ms. Found 2 JPA repository interfaces.
+2026-05-15 16:43:08.027 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - [initialize,111] - Tomcat initialized with port 8080 (http)
+2026-05-15 16:43:08.044 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-15 16:43:08.046 [main] INFO  org.apache.catalina.core.StandardService - [log,173] - Starting service [Tomcat]
+2026-05-15 16:43:08.046 [main] INFO  org.apache.catalina.core.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2026-05-15 16:43:08.137 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2026-05-15 16:43:08.137 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,301] - Root WebApplicationContext: initialization completed in 1876 ms
+2026-05-15 16:43:08.287 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - [logPersistenceUnitInformation,31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-15 16:43:08.368 [main] INFO  org.hibernate.Version - [logVersion,44] - HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-05-15 16:43:08.417 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - [initiateService,50] - HHH000026: Second-level cache disabled
+2026-05-15 16:43:08.759 [main] INFO  o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - [addTransformer,87] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-15 16:43:08.799 [main] INFO  com.zaxxer.hikari.HikariDataSource - [getConnection,109] - HikariPool-1 - Starting...
+2026-05-15 16:43:08.960 [main] INFO  com.zaxxer.hikari.pool.HikariPool - [checkFailFast,554] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3ba5c4dd
+2026-05-15 16:43:08.963 [main] INFO  com.zaxxer.hikari.HikariDataSource - [getConnection,122] - HikariPool-1 - Start completed.
+2026-05-15 16:43:10.098 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - [initiateService,59] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-15 16:43:10.178 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - [buildNativeEntityManagerFactory,437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-15 16:43:10.533 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - [configure,112] - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
+2026-05-15 16:43:10.572 [main] INFO  o.s.data.jpa.repository.query.QueryEnhancerFactory - [<clinit>,49] - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-15 16:43:10.865 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - [destroy,650] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-15 16:43:10.867 [main] INFO  com.zaxxer.hikari.HikariDataSource - [close,349] - HikariPool-1 - Shutdown initiated...
+2026-05-15 16:43:10.873 [main] INFO  com.zaxxer.hikari.HikariDataSource - [close,351] - HikariPool-1 - Shutdown completed.
+2026-05-15 16:43:10.875 [main] INFO  org.apache.catalina.core.StandardService - [log,173] - Stopping service [Tomcat]
+2026-05-15 16:43:10.888 [main] INFO  o.s.b.a.logging.ConditionEvaluationReportLogger - [logMessage,82] - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-05-15 16:47:41.228 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 8.0.2.Final
+2026-05-15 16:47:41.267 [main] INFO  com.weiyj.web.WeiblogMdWebApplication - [logStarting,50] - Starting WeiblogMdWebApplication using Java 17.0.12 with PID 26716 (E:\WorkSpace\weiBlog\server\weiblog-md-web\target\classes started by Administrator in E:\WorkSpace\weiBlog\server)
+2026-05-15 16:47:41.269 [main] INFO  com.weiyj.web.WeiblogMdWebApplication - [logStartupProfileInfo,660] - The following 1 profile is active: "dev"
+2026-05-15 16:47:42.215 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - [registerRepositoriesIn,143] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-15 16:47:42.281 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - [registerRepositoriesIn,211] - Finished Spring Data repository scanning in 54 ms. Found 2 JPA repository interfaces.
+2026-05-15 16:47:42.948 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - [initialize,111] - Tomcat initialized with port 8080 (http)
+2026-05-15 16:47:42.963 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-15 16:47:42.965 [main] INFO  org.apache.catalina.core.StandardService - [log,173] - Starting service [Tomcat]
+2026-05-15 16:47:42.966 [main] INFO  org.apache.catalina.core.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2026-05-15 16:47:43.064 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2026-05-15 16:47:43.065 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,301] - Root WebApplicationContext: initialization completed in 1759 ms
+2026-05-15 16:47:43.256 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - [logPersistenceUnitInformation,31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-15 16:47:43.324 [main] INFO  org.hibernate.Version - [logVersion,44] - HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-05-15 16:47:43.388 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - [initiateService,50] - HHH000026: Second-level cache disabled
+2026-05-15 16:47:43.830 [main] INFO  o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - [addTransformer,87] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-15 16:47:43.876 [main] INFO  com.zaxxer.hikari.HikariDataSource - [getConnection,109] - HikariPool-1 - Starting...
+2026-05-15 16:47:44.036 [main] INFO  com.zaxxer.hikari.pool.HikariPool - [checkFailFast,554] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@39342614
+2026-05-15 16:47:44.040 [main] INFO  com.zaxxer.hikari.HikariDataSource - [getConnection,122] - HikariPool-1 - Start completed.
+2026-05-15 16:47:45.106 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - [initiateService,59] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-15 16:47:45.180 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - [buildNativeEntityManagerFactory,437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-15 16:47:45.547 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - [configure,112] - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
+2026-05-15 16:47:45.596 [main] INFO  o.s.data.jpa.repository.query.QueryEnhancerFactory - [<clinit>,49] - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-15 16:47:45.903 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - [destroy,650] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-15 16:47:45.905 [main] INFO  com.zaxxer.hikari.HikariDataSource - [close,349] - HikariPool-1 - Shutdown initiated...
+2026-05-15 16:47:45.911 [main] INFO  com.zaxxer.hikari.HikariDataSource - [close,351] - HikariPool-1 - Shutdown completed.
+2026-05-15 16:47:45.913 [main] INFO  org.apache.catalina.core.StandardService - [log,173] - Stopping service [Tomcat]
+2026-05-15 16:47:45.925 [main] INFO  o.s.b.a.logging.ConditionEvaluationReportLogger - [logMessage,82] - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-05-15 16:49:10.477 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 8.0.2.Final
+2026-05-15 16:49:10.517 [main] INFO  com.weiyj.web.WeiblogMdWebApplication - [logStarting,50] - Starting WeiblogMdWebApplication using Java 17.0.12 with PID 21744 (E:\WorkSpace\weiBlog\server\weiblog-md-web\target\classes started by Administrator in E:\WorkSpace\weiBlog\server)
+2026-05-15 16:49:10.518 [main] INFO  com.weiyj.web.WeiblogMdWebApplication - [logStartupProfileInfo,660] - The following 1 profile is active: "dev"
+2026-05-15 16:49:11.357 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - [registerRepositoriesIn,143] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-15 16:49:11.422 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - [registerRepositoriesIn,211] - Finished Spring Data repository scanning in 51 ms. Found 2 JPA repository interfaces.
+2026-05-15 16:49:11.985 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - [initialize,111] - Tomcat initialized with port 8080 (http)
+2026-05-15 16:49:11.998 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-15 16:49:12.000 [main] INFO  org.apache.catalina.core.StandardService - [log,173] - Starting service [Tomcat]
+2026-05-15 16:49:12.000 [main] INFO  org.apache.catalina.core.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2026-05-15 16:49:12.079 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2026-05-15 16:49:12.079 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,301] - Root WebApplicationContext: initialization completed in 1520 ms
+2026-05-15 16:49:12.204 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - [logPersistenceUnitInformation,31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-15 16:49:12.275 [main] INFO  org.hibernate.Version - [logVersion,44] - HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-05-15 16:49:12.313 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - [initiateService,50] - HHH000026: Second-level cache disabled
+2026-05-15 16:49:12.585 [main] INFO  o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - [addTransformer,87] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-15 16:49:12.616 [main] INFO  com.zaxxer.hikari.HikariDataSource - [getConnection,109] - HikariPool-1 - Starting...
+2026-05-15 16:49:12.750 [main] INFO  com.zaxxer.hikari.pool.HikariPool - [checkFailFast,554] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@50bb1c1f
+2026-05-15 16:49:12.752 [main] INFO  com.zaxxer.hikari.HikariDataSource - [getConnection,122] - HikariPool-1 - Start completed.
+2026-05-15 16:49:13.613 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - [initiateService,59] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-15 16:49:13.680 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - [buildNativeEntityManagerFactory,437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-15 16:49:13.982 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - [configure,112] - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
+2026-05-15 16:49:14.021 [main] INFO  o.s.data.jpa.repository.query.QueryEnhancerFactory - [<clinit>,49] - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-15 16:49:14.311 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - [destroy,650] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-15 16:49:14.314 [main] INFO  com.zaxxer.hikari.HikariDataSource - [close,349] - HikariPool-1 - Shutdown initiated...
+2026-05-15 16:49:14.320 [main] INFO  com.zaxxer.hikari.HikariDataSource - [close,351] - HikariPool-1 - Shutdown completed.
+2026-05-15 16:49:14.321 [main] INFO  org.apache.catalina.core.StandardService - [log,173] - Stopping service [Tomcat]
+2026-05-15 16:49:14.332 [main] INFO  o.s.b.a.logging.ConditionEvaluationReportLogger - [logMessage,82] - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-05-15 16:50:27.425 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 8.0.2.Final
+2026-05-15 16:50:27.467 [main] INFO  com.weiyj.web.WeiblogMdWebApplication - [logStarting,50] - Starting WeiblogMdWebApplication using Java 17.0.12 with PID 26480 (E:\WorkSpace\weiBlog\server\weiblog-md-web\target\classes started by Administrator in E:\WorkSpace\weiBlog\server)
+2026-05-15 16:50:27.468 [main] INFO  com.weiyj.web.WeiblogMdWebApplication - [logStartupProfileInfo,660] - The following 1 profile is active: "dev"
+2026-05-15 16:50:28.318 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - [registerRepositoriesIn,143] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-15 16:50:28.380 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - [registerRepositoriesIn,211] - Finished Spring Data repository scanning in 55 ms. Found 2 JPA repository interfaces.
+2026-05-15 16:50:28.944 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - [initialize,111] - Tomcat initialized with port 8080 (http)
+2026-05-15 16:50:28.957 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-15 16:50:28.958 [main] INFO  org.apache.catalina.core.StandardService - [log,173] - Starting service [Tomcat]
+2026-05-15 16:50:28.959 [main] INFO  org.apache.catalina.core.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2026-05-15 16:50:29.036 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2026-05-15 16:50:29.036 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,301] - Root WebApplicationContext: initialization completed in 1526 ms
+2026-05-15 16:50:29.155 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - [logPersistenceUnitInformation,31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-15 16:50:29.215 [main] INFO  org.hibernate.Version - [logVersion,44] - HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-05-15 16:50:29.253 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - [initiateService,50] - HHH000026: Second-level cache disabled
+2026-05-15 16:50:29.527 [main] INFO  o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - [addTransformer,87] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-15 16:50:29.559 [main] INFO  com.zaxxer.hikari.HikariDataSource - [getConnection,109] - HikariPool-1 - Starting...
+2026-05-15 16:50:29.692 [main] INFO  com.zaxxer.hikari.pool.HikariPool - [checkFailFast,554] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@990b86b
+2026-05-15 16:50:29.696 [main] INFO  com.zaxxer.hikari.HikariDataSource - [getConnection,122] - HikariPool-1 - Start completed.
+2026-05-15 16:50:30.685 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - [initiateService,59] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-15 16:50:30.739 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - [buildNativeEntityManagerFactory,437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-15 16:50:31.047 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - [configure,112] - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
+2026-05-15 16:50:31.080 [main] INFO  o.s.data.jpa.repository.query.QueryEnhancerFactory - [<clinit>,49] - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-15 16:50:31.313 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - [destroy,650] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-15 16:50:31.315 [main] INFO  com.zaxxer.hikari.HikariDataSource - [close,349] - HikariPool-1 - Shutdown initiated...
+2026-05-15 16:50:31.321 [main] INFO  com.zaxxer.hikari.HikariDataSource - [close,351] - HikariPool-1 - Shutdown completed.
+2026-05-15 16:50:31.322 [main] INFO  org.apache.catalina.core.StandardService - [log,173] - Stopping service [Tomcat]
+2026-05-15 16:50:31.334 [main] INFO  o.s.b.a.logging.ConditionEvaluationReportLogger - [logMessage,82] - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-05-15 16:56:25.187 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 8.0.2.Final
+2026-05-15 16:56:25.228 [main] INFO  com.weiyj.web.WeiblogMdWebApplication - [logStarting,50] - Starting WeiblogMdWebApplication using Java 17.0.12 with PID 1796 (E:\WorkSpace\weiBlog\server\weiblog-md-web\target\classes started by Administrator in E:\WorkSpace\weiBlog\server)
+2026-05-15 16:56:25.229 [main] INFO  com.weiyj.web.WeiblogMdWebApplication - [logStartupProfileInfo,660] - The following 1 profile is active: "dev"
+2026-05-15 16:56:26.153 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - [registerRepositoriesIn,143] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-15 16:56:26.215 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - [registerRepositoriesIn,211] - Finished Spring Data repository scanning in 54 ms. Found 2 JPA repository interfaces.
+2026-05-15 16:56:26.791 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - [initialize,111] - Tomcat initialized with port 8080 (http)
+2026-05-15 16:56:26.805 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-15 16:56:26.806 [main] INFO  org.apache.catalina.core.StandardService - [log,173] - Starting service [Tomcat]
+2026-05-15 16:56:26.807 [main] INFO  org.apache.catalina.core.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2026-05-15 16:56:26.885 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2026-05-15 16:56:26.885 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,301] - Root WebApplicationContext: initialization completed in 1611 ms
+2026-05-15 16:56:27.002 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - [logPersistenceUnitInformation,31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-15 16:56:27.065 [main] INFO  org.hibernate.Version - [logVersion,44] - HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-05-15 16:56:27.102 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - [initiateService,50] - HHH000026: Second-level cache disabled
+2026-05-15 16:56:27.380 [main] INFO  o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - [addTransformer,87] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-15 16:56:27.413 [main] INFO  com.zaxxer.hikari.HikariDataSource - [getConnection,109] - HikariPool-1 - Starting...
+2026-05-15 16:56:27.554 [main] INFO  com.zaxxer.hikari.pool.HikariPool - [checkFailFast,554] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@67593f7b
+2026-05-15 16:56:27.557 [main] INFO  com.zaxxer.hikari.HikariDataSource - [getConnection,122] - HikariPool-1 - Start completed.
+2026-05-15 16:56:28.460 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - [initiateService,59] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-15 16:56:28.526 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - [buildNativeEntityManagerFactory,437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-15 16:56:28.837 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - [configure,112] - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
+2026-05-15 16:56:28.878 [main] INFO  o.s.data.jpa.repository.query.QueryEnhancerFactory - [<clinit>,49] - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-15 16:56:29.127 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - [destroy,650] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-15 16:56:29.128 [main] INFO  com.zaxxer.hikari.HikariDataSource - [close,349] - HikariPool-1 - Shutdown initiated...
+2026-05-15 16:56:29.133 [main] INFO  com.zaxxer.hikari.HikariDataSource - [close,351] - HikariPool-1 - Shutdown completed.
+2026-05-15 16:56:29.135 [main] INFO  org.apache.catalina.core.StandardService - [log,173] - Stopping service [Tomcat]
+2026-05-15 16:56:29.150 [main] INFO  o.s.b.a.logging.ConditionEvaluationReportLogger - [logMessage,82] - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-05-15 16:56:49.619 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 8.0.2.Final
+2026-05-15 16:56:49.657 [main] INFO  com.weiyj.web.WeiblogMdWebApplication - [logStarting,50] - Starting WeiblogMdWebApplication using Java 17.0.12 with PID 25496 (E:\WorkSpace\weiBlog\server\weiblog-md-web\target\classes started by Administrator in E:\WorkSpace\weiBlog\server)
+2026-05-15 16:56:49.658 [main] INFO  com.weiyj.web.WeiblogMdWebApplication - [logStartupProfileInfo,660] - The following 1 profile is active: "dev"
+2026-05-15 16:56:50.558 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - [registerRepositoriesIn,143] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-15 16:56:50.634 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - [registerRepositoriesIn,211] - Finished Spring Data repository scanning in 66 ms. Found 2 JPA repository interfaces.
+2026-05-15 16:56:51.230 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - [initialize,111] - Tomcat initialized with port 8080 (http)
+2026-05-15 16:56:51.242 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-15 16:56:51.244 [main] INFO  org.apache.catalina.core.StandardService - [log,173] - Starting service [Tomcat]
+2026-05-15 16:56:51.244 [main] INFO  org.apache.catalina.core.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2026-05-15 16:56:51.328 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2026-05-15 16:56:51.328 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,301] - Root WebApplicationContext: initialization completed in 1630 ms
+2026-05-15 16:56:51.453 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - [logPersistenceUnitInformation,31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-15 16:56:51.517 [main] INFO  org.hibernate.Version - [logVersion,44] - HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-05-15 16:56:51.552 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - [initiateService,50] - HHH000026: Second-level cache disabled
+2026-05-15 16:56:51.826 [main] INFO  o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - [addTransformer,87] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-15 16:56:51.858 [main] INFO  com.zaxxer.hikari.HikariDataSource - [getConnection,109] - HikariPool-1 - Starting...
+2026-05-15 16:56:51.994 [main] INFO  com.zaxxer.hikari.pool.HikariPool - [checkFailFast,554] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7981963f
+2026-05-15 16:56:51.997 [main] INFO  com.zaxxer.hikari.HikariDataSource - [getConnection,122] - HikariPool-1 - Start completed.
+2026-05-15 16:56:52.977 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - [initiateService,59] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-15 16:56:53.042 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - [buildNativeEntityManagerFactory,437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-15 16:56:53.355 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - [configure,112] - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
+2026-05-15 16:56:53.390 [main] INFO  o.s.data.jpa.repository.query.QueryEnhancerFactory - [<clinit>,49] - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-15 16:56:53.628 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - [<init>,59] - Adding welcome page: URL [file:E:/WorkSpace/weiBlog/view/dist/index.html]
+2026-05-15 16:56:54.095 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+2026-05-15 16:56:54.114 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - [start,243] - Tomcat started on port 8080 (http) with context path '/'
+2026-05-15 16:56:54.123 [main] INFO  com.weiyj.web.WeiblogMdWebApplication - [logStarted,56] - Started WeiblogMdWebApplication in 5.078 seconds (process running for 5.81)
+2026-05-15 16:57:12.429 [http-nio-8080-exec-3] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-15 16:57:12.429 [http-nio-8080-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet - [initServletBean,532] - Initializing Servlet 'dispatcherServlet'
+2026-05-15 16:57:12.430 [http-nio-8080-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet - [initServletBean,554] - Completed initialization in 1 ms
+2026-05-15 16:57:13.124 [http-nio-8080-exec-4] INFO  org.springdoc.api.AbstractOpenApiResource - [getOpenApi,390] - Init duration for springdoc-openapi is: 224 ms
+2026-05-15 17:02:02.023 [SpringApplicationShutdownHook] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - [destroy,650] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-15 17:02:02.024 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - [close,349] - HikariPool-1 - Shutdown initiated...
+2026-05-15 17:02:02.029 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - [close,351] - HikariPool-1 - Shutdown completed.
+2026-05-15 17:02:05.489 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 8.0.2.Final
+2026-05-15 17:02:05.526 [main] INFO  com.weiyj.web.WeiblogMdWebApplication - [logStarting,50] - Starting WeiblogMdWebApplication using Java 17.0.12 with PID 29096 (E:\WorkSpace\weiBlog\server\weiblog-md-web\target\classes started by Administrator in E:\WorkSpace\weiBlog\server)
+2026-05-15 17:02:05.528 [main] INFO  com.weiyj.web.WeiblogMdWebApplication - [logStartupProfileInfo,660] - The following 1 profile is active: "dev"
+2026-05-15 17:02:06.363 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - [registerRepositoriesIn,143] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-15 17:02:06.424 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - [registerRepositoriesIn,211] - Finished Spring Data repository scanning in 53 ms. Found 2 JPA repository interfaces.
+2026-05-15 17:02:06.996 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - [initialize,111] - Tomcat initialized with port 8080 (http)
+2026-05-15 17:02:07.009 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-15 17:02:07.011 [main] INFO  org.apache.catalina.core.StandardService - [log,173] - Starting service [Tomcat]
+2026-05-15 17:02:07.011 [main] INFO  org.apache.catalina.core.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2026-05-15 17:02:07.089 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2026-05-15 17:02:07.089 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,301] - Root WebApplicationContext: initialization completed in 1523 ms
+2026-05-15 17:02:07.201 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - [logPersistenceUnitInformation,31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-15 17:02:07.260 [main] INFO  org.hibernate.Version - [logVersion,44] - HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-05-15 17:02:07.295 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - [initiateService,50] - HHH000026: Second-level cache disabled
+2026-05-15 17:02:07.556 [main] INFO  o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - [addTransformer,87] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-15 17:02:07.586 [main] INFO  com.zaxxer.hikari.HikariDataSource - [getConnection,109] - HikariPool-1 - Starting...
+2026-05-15 17:02:07.714 [main] INFO  com.zaxxer.hikari.pool.HikariPool - [checkFailFast,554] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4780341
+2026-05-15 17:02:07.716 [main] INFO  com.zaxxer.hikari.HikariDataSource - [getConnection,122] - HikariPool-1 - Start completed.
+2026-05-15 17:02:08.575 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - [initiateService,59] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-15 17:02:08.650 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - [buildNativeEntityManagerFactory,437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-15 17:02:08.956 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - [configure,112] - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
+2026-05-15 17:02:08.989 [main] INFO  o.s.data.jpa.repository.query.QueryEnhancerFactory - [<clinit>,49] - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-15 17:02:09.195 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - [<init>,59] - Adding welcome page: URL [file:E:/WorkSpace/weiBlog/view/dist/index.html]
+2026-05-15 17:02:09.660 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+2026-05-15 17:02:09.678 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - [start,243] - Tomcat started on port 8080 (http) with context path '/'
+2026-05-15 17:02:09.688 [main] INFO  com.weiyj.web.WeiblogMdWebApplication - [logStarted,56] - Started WeiblogMdWebApplication in 4.763 seconds (process running for 5.536)
+2026-05-15 17:02:15.186 [http-nio-8080-exec-8] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-15 17:02:15.188 [http-nio-8080-exec-8] INFO  org.springframework.web.servlet.DispatcherServlet - [initServletBean,532] - Initializing Servlet 'dispatcherServlet'
+2026-05-15 17:02:15.189 [http-nio-8080-exec-8] INFO  org.springframework.web.servlet.DispatcherServlet - [initServletBean,554] - Completed initialization in 1 ms
+2026-05-15 17:03:23.418 [SpringApplicationShutdownHook] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - [destroy,650] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-15 17:03:23.420 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - [close,349] - HikariPool-1 - Shutdown initiated...
+2026-05-15 17:03:23.427 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - [close,351] - HikariPool-1 - Shutdown completed.
+2026-05-15 17:03:29.594 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 8.0.2.Final
+2026-05-15 17:03:29.632 [main] INFO  com.weiyj.web.WeiblogMdWebApplication - [logStarting,50] - Starting WeiblogMdWebApplication using Java 17.0.12 with PID 24588 (E:\WorkSpace\weiBlog\server\weiblog-md-web\target\classes started by Administrator in E:\WorkSpace\weiBlog\server)
+2026-05-15 17:03:29.633 [main] INFO  com.weiyj.web.WeiblogMdWebApplication - [logStartupProfileInfo,660] - The following 1 profile is active: "dev"
+2026-05-15 17:03:30.579 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - [registerRepositoriesIn,143] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-15 17:03:30.640 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - [registerRepositoriesIn,211] - Finished Spring Data repository scanning in 53 ms. Found 2 JPA repository interfaces.
+2026-05-15 17:03:31.198 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - [initialize,111] - Tomcat initialized with port 8080 (http)
+2026-05-15 17:03:31.211 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-15 17:03:31.212 [main] INFO  org.apache.catalina.core.StandardService - [log,173] - Starting service [Tomcat]
+2026-05-15 17:03:31.213 [main] INFO  org.apache.catalina.core.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2026-05-15 17:03:31.286 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2026-05-15 17:03:31.288 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,301] - Root WebApplicationContext: initialization completed in 1613 ms
+2026-05-15 17:03:31.405 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - [logPersistenceUnitInformation,31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-15 17:03:31.466 [main] INFO  org.hibernate.Version - [logVersion,44] - HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-05-15 17:03:31.500 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - [initiateService,50] - HHH000026: Second-level cache disabled
+2026-05-15 17:03:31.766 [main] INFO  o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - [addTransformer,87] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-15 17:03:31.799 [main] INFO  com.zaxxer.hikari.HikariDataSource - [getConnection,109] - HikariPool-1 - Starting...
+2026-05-15 17:03:31.929 [main] INFO  com.zaxxer.hikari.pool.HikariPool - [checkFailFast,554] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@40d10264
+2026-05-15 17:03:31.931 [main] INFO  com.zaxxer.hikari.HikariDataSource - [getConnection,122] - HikariPool-1 - Start completed.
+2026-05-15 17:03:32.800 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - [initiateService,59] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-15 17:03:32.863 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - [buildNativeEntityManagerFactory,437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-15 17:03:33.168 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - [configure,112] - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
+2026-05-15 17:03:33.200 [main] INFO  o.s.data.jpa.repository.query.QueryEnhancerFactory - [<clinit>,49] - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-15 17:03:33.462 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - [destroy,650] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-15 17:03:33.464 [main] INFO  com.zaxxer.hikari.HikariDataSource - [close,349] - HikariPool-1 - Shutdown initiated...
+2026-05-15 17:03:33.471 [main] INFO  com.zaxxer.hikari.HikariDataSource - [close,351] - HikariPool-1 - Shutdown completed.
+2026-05-15 17:03:33.472 [main] INFO  org.apache.catalina.core.StandardService - [log,173] - Stopping service [Tomcat]
+2026-05-15 17:03:33.484 [main] INFO  o.s.b.a.logging.ConditionEvaluationReportLogger - [logMessage,82] - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-05-15 17:11:12.216 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 8.0.2.Final
+2026-05-15 17:11:12.255 [main] INFO  com.weiyj.web.WeiblogMdWebApplication - [logStarting,50] - Starting WeiblogMdWebApplication using Java 17.0.12 with PID 8948 (E:\WorkSpace\weiBlog\server\weiblog-md-web\target\classes started by Administrator in E:\WorkSpace\weiBlog\server)
+2026-05-15 17:11:12.257 [main] INFO  com.weiyj.web.WeiblogMdWebApplication - [logStartupProfileInfo,660] - The following 1 profile is active: "dev"
+2026-05-15 17:11:13.122 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - [registerRepositoriesIn,143] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-15 17:11:13.197 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - [registerRepositoriesIn,211] - Finished Spring Data repository scanning in 66 ms. Found 2 JPA repository interfaces.
+2026-05-15 17:11:13.812 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - [initialize,111] - Tomcat initialized with port 8080 (http)
+2026-05-15 17:11:13.826 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-15 17:11:13.828 [main] INFO  org.apache.catalina.core.StandardService - [log,173] - Starting service [Tomcat]
+2026-05-15 17:11:13.828 [main] INFO  org.apache.catalina.core.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2026-05-15 17:11:13.913 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2026-05-15 17:11:13.913 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,301] - Root WebApplicationContext: initialization completed in 1617 ms
+2026-05-15 17:11:14.034 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - [logPersistenceUnitInformation,31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-15 17:11:14.095 [main] INFO  org.hibernate.Version - [logVersion,44] - HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-05-15 17:11:14.131 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - [initiateService,50] - HHH000026: Second-level cache disabled
+2026-05-15 17:11:14.402 [main] INFO  o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - [addTransformer,87] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-15 17:11:14.433 [main] INFO  com.zaxxer.hikari.HikariDataSource - [getConnection,109] - HikariPool-1 - Starting...
+2026-05-15 17:11:14.568 [main] INFO  com.zaxxer.hikari.pool.HikariPool - [checkFailFast,554] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@40dee07b
+2026-05-15 17:11:14.570 [main] INFO  com.zaxxer.hikari.HikariDataSource - [getConnection,122] - HikariPool-1 - Start completed.
+2026-05-15 17:11:15.463 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - [initiateService,59] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-15 17:11:15.533 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - [buildNativeEntityManagerFactory,437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-15 17:11:15.846 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - [configure,112] - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
+2026-05-15 17:11:15.884 [main] INFO  o.s.data.jpa.repository.query.QueryEnhancerFactory - [<clinit>,49] - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-15 17:11:16.454 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - [<init>,59] - Adding welcome page: URL [file:E:/WorkSpace/weiBlog/view/dist/index.html]
+2026-05-15 17:11:16.958 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+2026-05-15 17:11:16.981 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - [start,243] - Tomcat started on port 8080 (http) with context path '/'
+2026-05-15 17:11:16.993 [main] INFO  com.weiyj.web.WeiblogMdWebApplication - [logStarted,56] - Started WeiblogMdWebApplication in 5.378 seconds (process running for 6.254)
+2026-05-15 17:11:27.739 [http-nio-8080-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-15 17:11:27.739 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - [initServletBean,532] - Initializing Servlet 'dispatcherServlet'
+2026-05-15 17:11:27.742 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - [initServletBean,554] - Completed initialization in 2 ms
+2026-05-15 17:14:09.959 [SpringApplicationShutdownHook] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - [destroy,650] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-15 17:14:09.962 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - [close,349] - HikariPool-1 - Shutdown initiated...
+2026-05-15 17:14:09.969 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - [close,351] - HikariPool-1 - Shutdown completed.

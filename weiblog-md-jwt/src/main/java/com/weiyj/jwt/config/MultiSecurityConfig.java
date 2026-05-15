@@ -94,7 +94,8 @@ public class MultiSecurityConfig  {
                     // --- 权限控制 ---
                     // 只有 ADMIN 角色能访问 /admin/**
                     .requestMatchers("/api/admin/**").authenticated()
-
+                    .requestMatchers("/api/system/**").authenticated()
+                    .requestMatchers("/api/tags/**").authenticated()
                     // --- 兜底策略 ---
                     // 所有未匹配的路径都需放行
                     .anyRequest().permitAll()
