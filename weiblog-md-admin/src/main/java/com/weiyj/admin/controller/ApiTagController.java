@@ -7,6 +7,7 @@
  **/
 package com.weiyj.admin.controller;
 
+import com.weiyj.admin.db.TagEntity;
 import com.weiyj.admin.service.TagService;
 import com.weiyj.common.controller.BaseController;
 import com.weiyj.common.response.Result;
@@ -21,10 +22,12 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Log4j2
@@ -60,6 +63,27 @@ public class ApiTagController extends BaseController  {
             log.error("获取标签汇总信息出错:"+e.getMessage());
             return new Result(ResultCode.FAIL.code,e.getMessage(),null);
         }
-
     }
+
+    @Operation(summary = "按缩略名或者标签名检索标签",description = "")
+    @PostMapping("/wb2db_q_tags_list")
+    @Transactional
+    public Map wb2db_q_tags_list(HttpServletRequest request, HttpServletResponse response, @RequestParam String keyword){
+        try{
+            HashMap<String, Object> data = new HashMap<>();
+
+            //根据关键词检索tag列表
+            List<TagEntity> tagEntities = tagService.searchTags(keyword);
+
+            data.put("detail",tagEntities);
+
+            return new Result(ResultCode.SUCCESS.code, ResultCode.SUCCESS.message,data);
+        }catch (Exception e){
+            log.error("获取标签汇总信息出错:"+e.getMessage());
+            return new Result(ResultCode.FAIL.code,e.getMessage(),null);
+        }
+    }
+
+
+
 }

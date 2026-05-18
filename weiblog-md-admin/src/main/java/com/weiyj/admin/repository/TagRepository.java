@@ -91,7 +91,7 @@ public interface TagRepository extends JpaRepository<TagEntity, Integer> {
      * @param keyword 关键词
      * @return 标签列表
      */
-    @Query(value = "SELECT t FROM TagEntity t WHERE t.name LIKE CONCAT('%', :keyword, '%') OR t.slug LIKE CONCAT('%', :keyword, '%')")
+    @Query(value = "SELECT t FROM TagEntity t WHERE (:keyword IS NULL OR t.name LIKE CONCAT('%', :keyword, '%') )OR (:keyword IS NULL OR t.slug LIKE CONCAT('%', :keyword, '%')) ")
     List<TagEntity> searchByKeyword(@Param("keyword") String keyword);
 
     // ==================== 分页查询方法 ====================
