@@ -172,7 +172,7 @@ public interface TagRepository extends JpaRepository<TagEntity, Integer> {
      */
     @Modifying
     @Transactional
-    @Query(value = "DELETE FROM tags t WHERE t.id IN :ids",nativeQuery = true)
+    @Query(value = "DELETE FROM tags WHERE id IN :ids",nativeQuery = true)
     int batchDeleteByIds(@Param("ids") List<Integer> ids);
 
     // ==================== 关联查询方法 ====================

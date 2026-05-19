@@ -34,7 +34,7 @@ public class TagEntity {
     @Column(length = 255)
     private String description;
 
-    @Column(length = 7, columnDefinition = "VARCHAR(7) DEFAULT '#409EFF'")
+    @Column(length = 7, columnDefinition = "VARCHAR(9) DEFAULT '#409EFF'")
     private String color = "#409EFF";
 
     @CreationTimestamp
