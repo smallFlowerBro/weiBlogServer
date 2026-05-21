@@ -186,4 +186,28 @@ public class ApiCategoriesController extends BaseController {
         }
     }
 
+    /**
+     * 交换排序
+     * @param request
+     * @param response
+     * @param id1
+     * @param id2
+     * @return
+     */
+    @Operation(summary = "交换排序",description = "")
+    @PostMapping("/wb2db_swap_sort")
+    @Transactional
+    public Map wb2db_swap_sort(HttpServletRequest request, HttpServletResponse response,
+                                     @RequestParam @NotNull(message = "分类id1不得为空") Integer id1,
+                                     @RequestParam @NotNull(message = "分类id2不得为空") Integer id2
+                                     ){
+        try{
+            categoryService.swapSortOrder(id1,id2);
+            return new Result(ResultCode.SUCCESS.code, ResultCode.SUCCESS.message,null);
+        }catch (Exception e){
+            log.error("交换排序出错:"+e.getMessage());
+            return new Result(ResultCode.FAIL.code,e.getMessage(),null);
+        }
+    }
+
 }

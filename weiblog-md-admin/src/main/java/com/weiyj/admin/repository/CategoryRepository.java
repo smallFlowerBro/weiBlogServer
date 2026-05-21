@@ -272,20 +272,6 @@ public interface CategoryRepository extends JpaRepository<CategoryEntity, Intege
     @Query("SELECT COALESCE(MIN(c.sortOrder), 0) FROM CategoryEntity c")
     Integer getMinSortOrder();
 
-    /**
-     * 交换两个分类的排序权重
-     * @param id1 分类ID1
-     * @param id2 分类ID2
-     */
-    @Modifying
-    @Transactional
-    @Query("UPDATE CategoryEntity c SET c.sortOrder = " +
-            "CASE WHEN c.id = :id1 THEN (SELECT sortOrder FROM CategoryEntity WHERE id = :id2) " +
-            "     WHEN c.id = :id2 THEN (SELECT sortOrder FROM CategoryEntity WHERE id = :id1) " +
-            "     ELSE c.sortOrder END, " +
-            "c.updatedAt = CURRENT_TIMESTAMP " +
-            "WHERE c.id IN (:id1, :id2)")
-    void swapSortOrder(@Param("id1") Integer id1, @Param("id2") Integer id2);
 
     // ==================== 关联查询方法 ====================
 

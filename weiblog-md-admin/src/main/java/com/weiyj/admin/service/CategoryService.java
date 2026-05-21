@@ -155,9 +155,22 @@ public class CategoryService {
      */
     @Transactional
     public void swapSortOrder(Integer id1, Integer id2) {
-        log.info("交换分类排序权重: id1={}, id2={}", id1, id2);
-        categoryRepository.swapSortOrder(id1, id2);
-        log.info("交换分类排序权重完成");
+        Optional<CategoryEntity> byId1 = categoryRepository.findById(id1);
+        Optional<CategoryEntity> byId2 = categoryRepository.findById(id2);
+        if (byId1==null){
+            throw new RuntimeException("未找到"+id1+"分类");
+        }
+        if (byId2==null){
+            throw new RuntimeException("未找到"+id2+"分类");
+        }
+        CategoryEntity categoryEntity1 = byId1.get();
+        CategoryEntity categoryEntity2 = byId2.get();
+
+        int temp_sort = categoryEntity1.getSortOrder();
+        categoryEntity1.setSortOrder(categoryEntity2.getSortOrder());
+        categoryEntity2.setSortOrder(temp_sort);
+        categoryRepository.save(categoryEntity1);
+        categoryRepository.save(categoryEntity2);
     }
 
     /**
